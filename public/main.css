@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+  background-color: #b1cbbb;
+  font-size: 30px;
+  color: #034f84
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.users {
+  flex-basis: 20%;
+  border: 1px solid darkgray;
+  border-radius: 1vw;
+  margin: 2vw;
+  padding: 2vw;
+}
+
+.h1 {
+  color: blue;
+  font-size: 1em;
+}
+
+.h2 {
+  font-size: .8em;
+  color: black;
+}
+
+.h3 {
+  color: red;
+  font-size: .8em;
+}
+
+a {
+  text-decoration: none;
+  background: #92a8d1
+}
+
+#body2 {
+  display: grid;
+  padding-top: 10vw;
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.education {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 40%;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 40%;
+}
+
+.top-left img {
+  border: 1px solid gray;
+  border-radius: 50vw;
+}
+
+.top-right {
+  padding-top: 5vw;
+  padding-left: 2vw;
+}
+
+.education {
+  padding-top: 1vw;
+}
+
+.skills {
+  padding-top: 3vw;
+}
+
+.ed2 {
+  font-weight: normal;
+}
+
+.sk2 h5 {
+  font-weight: normal;
+}
+
+.available {
+  color: red;
+}

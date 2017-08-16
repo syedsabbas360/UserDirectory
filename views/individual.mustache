@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>User directory</title>
+    <link rel='stylesheet' href='main.css'>
+  </head>
+
+  <body id="body2">
+    {{#robots}}
+    <div class="top">
+      <div class="top-left">
+        <img src="{{avatar}}" alt="">
+      </div>
+      <div class="top-right">
+        <h1>{{name}}</h1>
+        {{#address.city}}
+          {{#job}}
+          <h5>{{address.city}}, {{address.country}} | {{job}}, {{company}}</h5>
+          {{/job}}
+          {{^job}}
+          <h5>{{address.city}}, {{address.country}} | <span class="available">Available for hire</span></h5>
+          {{/job}}
+          {{/address.city}}
+          {{^address.city}}
+            {{#job}}
+            <h5>{{address.country}} | {{job}}, {{company}}</h5>
+            {{/job}}
+            {{^job}}
+            <h5>{{address.country}} | <span class="available">Available for hire</span></h5>
+            {{/job}}
+          {{/address.city}}
+        <h5>{{email}} | {{phone}}</h5>
+      </div>
+    </div>
+      <div class="education">
+        {{#university}}
+        <h5 class="ed1">Education</h5>
+        {{/university}}
+        {{^university}}
+        {{/university}}
+        {{#university}}
+        <h5 class="ed2">{{university}}</h5>
+        {{/university}}
+        {{^university}}
+        {{/university}}
+      </div>
+      <div class="skills">
+        <h5 class="ed1">Skills</h5>
+        <div class="sk2">
+          {{#skills}}
+          <h5 class="indskills">{{.}}</h5>
+          {{/skills}}
+        </div>
+      </div>
+    {{/robots}}
+    <script type='text/javascript' src='main.js'></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </body>
+
+</html>
